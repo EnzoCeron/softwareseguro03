@@ -1,15 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Cria um álbum
+        album album1 = new album(2019, "We Love You Tecca", new ArrayList<musica>());
+        // Cria as musicas
+        musica song1 = new musica("Ransom", 2.11, "Lil Tecca");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        musica song2 = new musica("Shots", 1.49, "Lil Tecca");
+
+        musica song3 = new musica("Sidenote", 2.00, "Lil Tecca");
+
+        musica song4 = new musica("Did it Again", 1.54, "Lil Tecca");
+
+        musica song5 = new musica("Out of Luck", 2.11, "Lil Tecca");
+
+        musica song6 = new musica("Left, Right", 2.11, "Lil Tecca");
+
+        musica song7 = new musica("Bossanova", 2.11, "Lil Tecca");
+
+        musica song8 = new musica("Amigo", 2.11, "Lil Tecca");
+        
+        // Add the song to the album
+        album1.musicas.add(song1);
+        album1.musicas.add(song2);
+        album1.musicas.add(song3);
+        album1.musicas.add(song4);
+        album1.musicas.add(song5);
+        album1.musicas.add(song6);
+        album1.musicas.add(song7);
+        album1.musicas.add(song8);
     }
 }
