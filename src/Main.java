@@ -21,14 +21,20 @@ public class Main {
 
         musica song8 = new musica("Amigo", 2.11, "Lil Tecca");
         
-        // Add the song to the album
-        album1.musicas.add(song1);
-        album1.musicas.add(song2);
-        album1.musicas.add(song3);
-        album1.musicas.add(song4);
-        album1.musicas.add(song5);
-        album1.musicas.add(song6);
-        album1.musicas.add(song7);
-        album1.musicas.add(song8);
+        // Adiciona as musicas ao álbum
+        album1.getMusicas().add(song1);
+        album1.getMusicas().add(song2);
+        album1.getMusicas().add(song3);
+        album1.getMusicas().add(song4);
+        album1.getMusicas().add(song5);
+        album1.getMusicas().add(song6);
+        album1.getMusicas().add(song7);
+        album1.getMusicas().add(song8);
+
+        // Imprime as musicas do álbum
+        System.out.println("Álbum: " + album1.getNome() + " - Ano de lançamento: " + album1.getAno_lancamento());
+        for (musica song : album1.getMusicas()) {
+            System.out.println("Nome: " + song.getNome() + " - Duração: " + song.getDuracao() + " - Compositor: " + song.getCompositor());
+        }
     }
 }
